@@ -1,4 +1,6 @@
+'use strict';
 // 函数作用域和闭包
+
 const Log = console.log;
 function zipCode(code, location) {
   let _code = code;
@@ -61,3 +63,34 @@ function makeInner(params) {
 
 const inner = makeInner('Params'); // makeInner 调用返回inner引用, 此时makeInner内部的变量会被垃圾回收处理。而此处的inner仍然能够访问外部变量，是由于闭包产生了内部状态的快照.
 inner();
+
+// 作用域类型
+Log('----作用域类型----');
+// 全局作用域, 所有成员均被全局封装处理. 能够在脚本任意一处读取修改.
+// 函数式编程不推荐对全局对象状态处理.应该避免.
+
+// 函数作用域
+// js主推的作用域机制. 函数内部维护状态对于外部来说不可见，仅作用函数内部使用. 同时，在函数返回后，任何声明的局部变量都会被垃圾回收处理.
+// 作用域工作机制类似原型链访问机制类似, 由内而外.
+
+// 伪块作用域
+// 形如 {}中的代码块,在js中不存在所谓的块级作用域. 作用域中所有声明会被提升至变量顶部, 初始复制为undefned
+// 声明提升机制,造成的问题
+// 循环: 计数器
+const arr = [1, 2, 3, 4];
+
+function processArr() {
+  //   console.log(i); // undefined，可以印证变量在提升时，会被初始化为undefined.
+  //   var i = 0;
+  function multipleBy10(val) {
+    i = 10;
+
+    return val * i;
+  }
+
+  for (var i = 0; i < arr.length; i++) {
+    arr[i] = multipleBy10(arr[i]);
+  }
+}
+processArr();
+console.log(arr);
