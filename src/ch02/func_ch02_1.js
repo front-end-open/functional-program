@@ -23,6 +23,10 @@ class Person {
     return this._address;
   }
 
+  get fullname() {
+    return this._firstname + ' ' + this._lastname;
+  }
+
   get birthYear() {
     return this._birthYear;
   }
