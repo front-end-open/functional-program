@@ -179,4 +179,4 @@ console.log(res); // John von Neumann and Haskell Curry
 // 数组推导式,是map-filter的组合用法的hack
 // 由es7提案中被提出.
 // [for (p of persons) if (p.birthYear === 1903) p.fullname].join(' and ')
-q
+q;
