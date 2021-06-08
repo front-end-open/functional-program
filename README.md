@@ -4,3 +4,5 @@
 ![GitHub watchers](https://img.shields.io/github/watchers/PachVerb/functional-program?style=social)
 ![GitHub repo size](https://img.shields.io/github/repo-size/PachVerb/functional-program)
 ![GitHub issues](https://img.shields.io/github/issues-raw/PachVerb/functional-program)
+
+> javascript 函数式编程学习记录
