@@ -35,5 +35,9 @@ $ yarn
 ## 例子
 NOTE: 学习时都是在vscode扩展的服务器。如果你需要，也可以自行部署测试.
 
+## 交流
+Email: pachverb@gmail.com
 
+## 鸣谢
+....
 
