@@ -16,3 +16,7 @@
 - 据函数式编程概念记录
 - 函数编程对比**OOP**
 - 函数式编程应用
+
+## 演示
+
+<img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fwx1.sinaimg.cn%2Flarge%2F54a7a774ly1gr6a6z8urwj20hq0b7jt3.jpg&refer=http%3A%2F%2Fwx1.sinaimg.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1625752628&t=1a936b823b03e524cecc1600fa5d9fd1" width="100%" >
