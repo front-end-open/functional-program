@@ -43,5 +43,3 @@ _.chain(enrollment)
   .pluck('grade')
   .average()
   .value();
-
-console.log();
