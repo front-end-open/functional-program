@@ -207,4 +207,3 @@ class Wrapper {
 // 嵌套join压缩, 实例
 res = Wrapper.of(Wrapper.of(Wrapper.of('get Functional'))).join();
 console.log('nest Wrapper:', res);
-
